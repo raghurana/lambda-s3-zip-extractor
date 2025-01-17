@@ -1,0 +1,25 @@
+{
+  "name": "@project/app",
+  "version": "1.0.0",
+  "description": "Lambda handler for S3 zip extraction",
+  "main": "dist/index.js",
+  "types": "dist/index.d.ts",
+  "scripts": {
+    "prebuild": "rm -rf dist",
+    "build": "chmod +x scripts/build.sh && ./scripts/build.sh",
+    "predeploy": "npm run build",
+    "deploy": "chmod +x scripts/deploy.sh && ./scripts/deploy.sh"
+  },
+  "author": "Raghu Rana",
+  "license": "ISC",
+  "devDependencies": {
+    "@types/aws-lambda": "^8.10.124",
+    "@types/node": "22.7.9",
+    "typescript": "~5.6.3"
+  },
+  "dependencies": {
+    "@aws-sdk/client-s3": "3.623.0",
+    "extract-zip": "^2.0.1",
+    "s3-sync-client": "4.3.1"
+  }
+}
