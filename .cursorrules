@@ -1,0 +1,5 @@
+- All generated code should be in the `packages` folder
+- All generated code must be **Typescript**
+- code should be in the `src` folder
+- build artifacts should be in the `dist` folder
+- the `dist` folder should be ignored in the git repo

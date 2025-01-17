@@ -1,0 +1,13 @@
+{
+  "name": "lambda-s3-unzip",
+  "version": "1.0.0",
+  "private": true,
+  "author": "Raghu Rana",
+  "workspaces": [
+    "packages/*"
+  ],
+  "scripts": {
+    "build": "npm run build --workspaces --if-present",
+    "deploy": "npm run deploy --workspaces --if-present"
+  }
+}
